@@ -1,4 +1,4 @@
-const questions = [
+export const questions = [
     {
         letter: "a",
         answer: "abducir",
@@ -183,4 +183,3 @@ const questions = [
             "CON LA Z. Escuela de budismo que busca la experiencia de la sabiduría más allá del discurso racional",
     },
 ];
-export default { questions };
