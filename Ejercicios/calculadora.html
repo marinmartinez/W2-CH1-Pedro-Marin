@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function Calculadora(){
+    
+    let numero1;
+    let numero2; 
+    let  respuesta;
+    
+
+
+        
+         numero1 =IntroduceN1();             
+         respuesta =PreguntoN2();
+         
+         respuesta=respuesta.toUpperCase();
+
+            if (respuesta ==="S") {
+             numero2 = IntroduceN2();
+             CalcularA(numero1,numero2);
+             }  
+            else{
+            Calcular(numero1);
+            }
+        
+             
+              
+
+
+       }
+
+function IntroduceN1(){
+let numero;
+numero=prompt("Introduce el primer Numero de la operacion ");
+
+if ((numero===null)||(typeof numero === 'undefined')||(numero.length===0)){
+IntroduceN1(); 
+}
+if(isNaN(numero)===true){
+IntroduceN1();
+}
+return Number(numero);
+}
+function IntroduceN2(){
+let numero;
+numero =prompt("Introduce el segundo Numero de la operacion ");
+
+if ((numero===null)||(typeof numero === 'undefined')||(numero.length===0)){
+     
+IntroduceN2();
+}
+if(isNaN(numero)===true){
+IntroduceN2();
+}
+return Number(numero);
+}    
+
+function PreguntoN2(){
+let respuesta;
+respuesta=prompt("Quieres Introducir un segundo parametro a la operacion : S/N");
+if (respuesta===null){
+PreguntoN2();      
+}
+else if ((respuesta.toUpperCase() !=="S") && (respuesta.toUpperCase()!=="N")){
+PreguntoN2();   
+}
+return respuesta;
+}
+
+           
+    
+    
+    
+    
+    
+ 
+    
+
+function Calcular(n1){
+return ImprimeOperaciones(n1);
+}
+
+function CalcularA(n1,n2){
+let arreglo=[];
+arreglo[0]=Sumar(n1,n2);
+arreglo[1]=Restar(n1,n2);
+arreglo[2]=Dividir(n1,n2);
+arreglo[3]=Multiplicar(n1,n2);
+return ImprimeOperaciones(arreglo);
+}
+
+
+
+function Sumar(n1,n2){
+let resultado=n1+n2;
+return resultado;
+}
+function Multiplicar(n1,n2){
+let resultado=n1*n2;
+return resultado;
+}
+
+function Restar(n1,n2){
+let resultado=n1-n2;
+return resultado;
+}
+function Dividir(n1,n2){
+let resultado=n1/n2;
+return resultado;
+}
+function ImprimeOperaciones(arreglo){
+console.log(arreglo);
+}
+Calculadora();
+
+
+
+</script> 
+</body>
+</html>
