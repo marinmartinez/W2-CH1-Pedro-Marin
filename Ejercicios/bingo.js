@@ -58,7 +58,7 @@ function CreateBingoCard() {
             bingo[i].matched = false;
         } else {
             while (SearchNumber(bingo, numero) === true) {
-                numero = randonNumber();
+                numero = RandonNumber();
             }
             bingo[i].number = numero;
             bingo[i].matched = false;
