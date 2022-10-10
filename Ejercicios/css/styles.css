@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  justify-content: space-between;
+  flex: 1 0 12vh;
+  box-shadow: inset 0px -16px rgb(204, 204, 205);
+  padding-bottom: 2em;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 16px;
+}
+
+.nav > div:nth-of-type(1) > img {
+  width: 50%;
+}
+
+.nav > div:nth-of-type(1) > h1 {
+  font-size: 0;
+}
+
+.nav > div:nth-of-type(2) {
+  padding-top: 8px;
+  min-width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav > div:nth-of-type(2) > a {
+  padding: 8px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+nav > div:nth-of-type(2) > a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+
+.buy {
+  padding: 8px;
+  display: flex;
+  text-align: center;
+  font-size: 2rem;
+  background-color: white;
+  border: 3px solid orange;
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+
+.buy:hover {
+  color: white;
+  background-color: rgb(255, 94, 0);
+}
+
+.main {
+  flex: 30 0 12vh;
+  padding-bottom: 12vh;
+}
+
+.main > section:nth-of-type(1) > h2 {
+  padding-left: 16px;
+  font-size: 2rem;
+  color: rgb(255, 94, 0);
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section2 > h3 {
+  padding-left: 16px;
+  font-size: 4rem;
+  padding-bottom: 16px;
+}
+
+.section2 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container {
+  padding-right: 32px;
+}
+
+.container > div {
+  padding: 8px;
+  padding-right: 32px;
+  max-height: 50%;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background-color: rgb(255, 94, 0);
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+.container > div:hover {
+  border: 2px solid rgb(255, 94, 0);
+  background-color: white;
+  color: rgb(255, 94, 0);
+}
+
+.petsarticles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.petsarticles > article {
+  max-width: 20%;
+  background-size: contain;
+}
+
+.petsarticles > article > img {
+  aspect-ratio: 1;
+  width: 100%;
+  border: 3px solid rgb(233, 238, 240);
+  border-radius: 10%;
+}
+
+/*# sourceMappingURL=styles.css.map */
